@@ -21,3 +21,8 @@ ssh someinternalhost
 #VPN
 bastion_IP=158.160.61.21
 someinternalhost_IP=10.128.0.12
+
+# ДЗ 4
+
+testapp_IP = 51.250.94.66
+testapp_port = 9292
