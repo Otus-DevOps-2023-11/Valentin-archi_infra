@@ -2,21 +2,21 @@
     "variables":
         {
         "sa_path": "",
-        "id_source_image": "",
+        "source_image_family": "",
         "id_directory": "",
         "platform_id": "",
-        "user":"",
+        "ssh_username":"",
         "use_ipv4_nat":""
         },
     "builders": [
         {
             "type": "yandex",
             "service_account_key_file": "{{user `sa_path`}}",
-            "folder_id": "{{user `id_directory`}}",
-            "source_image_family": "{{user `id_source_image`}}",
+            "folder_id": "b1gnetd5fjsj0pa6193a",
+            "source_image_family": "ubuntu-1604-lts",
             "image_name": "reddit-base-{{timestamp}}",
             "image_family": "reddit-base",
-            "ssh_username": "{{user `id_source_image`}}",
+            "ssh_username": "ubuntu",
             "platform_id": "{{user `platform_id`}}",
             "use_ipv4_nat": "{{user `use_ipv4_nat`}}"
         }
